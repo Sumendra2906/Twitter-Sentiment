@@ -1,4 +1,4 @@
-# Twitter-Sentiment-Analysis-Using-Streamlit
+# Twitter-Sentiment
 The Streamlit framework makes deploying ML models just as easy as a few function calls.
 
 ## Sentiment Classification
