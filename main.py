@@ -65,13 +65,13 @@ if tweet_input != '':
 
 
 # Authenticating with the twitter api to pull tweets
-log = pd.read_csv('Login.csv')
+#log = pd.read_csv('Login.csv')
 
-consumerKey = log['key'][0]
-consumerSecret = log['key'][1]
+consumerKey = st.secrets["API"]
+consumerSecret = st.secrets["API_SECRET"]
 
-accessToken = log['key'][2]
-accessSecret = log['key'][3]
+accessToken = st.secrets["ACCESS_TOKEN"]
+accessSecret = st.secrets["ACCESS_TOKEN_SECRET"]
 
 authenticate = tweepy.OAuthHandler(consumerKey, consumerSecret)
 authenticate.set_access_token(accessToken, accessSecret)
